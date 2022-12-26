@@ -31,10 +31,14 @@ video2.addEventListener("pause", () => {
   playPauseContainer.classList.add("paused");
 });
 
+// swiper initializing
+
 const swiper = new Swiper(".swiper", {
   direction: "vertical",
   mousewheel: true,
 });
+
+// listen event on changes of slide
 
 swiper.on("slideChange", function () {
   videos.forEach((video) => {

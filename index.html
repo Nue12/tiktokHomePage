@@ -57,9 +57,10 @@
           <span>5780</span>
         </div>
       </div>
-      <!-- swiper implimentation -->
+      <!-- swiper implimentation start -->
       <div class="swiper">
         <div class="swiper-wrapper">
+          <!-- hard coded video tag start -->
           <div class="swiper-slide">
             <video width="375" height="600px" id="video1" loop>
               <source src="./assects/uptownGirl.mp4" type="video/mp4" />
@@ -70,8 +71,10 @@
               <source src="./assects/leanWithMe.mp4" type="video/mp4" />
             </video>
           </div>
+          <!-- hard coded video tag end -->
         </div>
       </div>
+      <!-- swiper implimentation end -->
 
       <div class="path_container">
         <i class="fas fa-home icn"></i>
@@ -89,7 +92,13 @@
       src="https://kit.fontawesome.com/460ed39f34.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- swiper.js using cdn and if you use this way you have to initialize swiper in script.js file -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- or you can use this way too -->
+    <!-- but in this way you have to initialize swiper in this file  -->
+
     <!-- <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
@@ -99,6 +108,7 @@
         mousewheel: true,
       });
     </script> -->
+
     <script src="script.js"></script>
   </body>
 </html>
