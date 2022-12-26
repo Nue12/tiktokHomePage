@@ -45,13 +45,13 @@ span {
 }
 
 .video_container {
-  min-width: 280px;
-  max-width: 340px;
+  max-width: 400px;
+  width: 375px;
   margin: 0 auto;
   position: relative;
   background-color: black;
   height: 100vh;
-  padding: 0 auto;
+  padding: 0px auto;
 }
 
 .video_container:hover .playPauseContainer {
@@ -71,7 +71,7 @@ video {
   padding: 0 10px;
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 35px;
   z-index: 100;
 }
 
@@ -116,6 +116,10 @@ video {
 .playIcn {
   border-radius: 50%;
   padding: 15px;
+}
+
+.playPauseContainer {
+  z-index: 100;
 }
 
 .playPauseContainer.paused .pauseIcn {
@@ -165,4 +169,14 @@ video {
 
 .userImg {
   width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .playPauseContainer {
+    display: none;
+  }
+}
+
+.swiper {
+  height: 600px;
 }

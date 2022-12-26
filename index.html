@@ -7,10 +7,10 @@
     <link rel="icon" href="./assects/tik-tok.png" />
     <title>Tiktok HomePage</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/460ed39f34.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="video_container">
@@ -57,9 +57,22 @@
           <span>5780</span>
         </div>
       </div>
-      <video width="340" height="600px" loop autoplay>
-        <source src="./assects/uptownGirl.mp4" type="video/mp4" />
-      </video>
+      <!-- swiper implimentation -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video width="375" height="600px" id="video1" loop>
+              <source src="./assects/uptownGirl.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <video width="375" height="600px" id="video2" loop>
+              <source src="./assects/leanWithMe.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
       <div class="path_container">
         <i class="fas fa-home icn"></i>
         <i class="far fa-shopping-bag icn"></i>
@@ -72,6 +85,20 @@
         <img src="./assects/user (1).png" alt="user" class="userImg point" />
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/460ed39f34.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        loop: true,
+        mousewheel: true,
+      });
+    </script> -->
     <script src="script.js"></script>
   </body>
 </html>
