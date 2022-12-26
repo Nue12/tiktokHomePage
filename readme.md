@@ -10,4 +10,4 @@
 - JavaScript
 - swiper.js (cdn)
 
-** I commented out the code of swiper.js so you can clear see the code of the rest **
+** I commented out the code of swiper.js so you can see obviously the rest of the code **
