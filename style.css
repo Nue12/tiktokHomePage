@@ -97,6 +97,15 @@ video {
   width: 25px;
 }
 
+.playPauseAndVideoContainer {
+  position: relative;
+}
+
+.pauseIcn,
+.playIcn {
+  cursor: auto;
+}
+
 .playPauseContainer {
   color: white;
   font-size: 20px;
@@ -110,6 +119,8 @@ video {
   height: 48px;
   overflow: hidden;
   transition: opacity 900ms;
+  user-select: none;
+  z-index: 200;
 }
 
 .pauseIcn,

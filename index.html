@@ -31,10 +31,10 @@
           class="searchIcon point"
         />
       </div>
-      <div class="playPauseContainer paused">
+      <!-- <div class="playPauseContainer paused">
         <i class="fas fa-pause pauseIcn"></i>
         <i class="fas fa-play playIcn"></i>
-      </div>
+      </div> -->
       <div class="social_icons_container">
         <img src="./assects/henry_face.jpg" alt="avatar" class="avatar point" />
         <div class="profileIcn_container">
@@ -62,14 +62,26 @@
         <div class="swiper-wrapper">
           <!-- hard coded video tag start -->
           <div class="swiper-slide">
-            <video width="375" height="600px" id="video1" loop>
-              <source src="./assects/uptownGirl.mp4" type="video/mp4" />
-            </video>
+            <div class="playPauseAndVideoContainer">
+              <div class="playPauseContainer paused playPause1">
+                <i class="fas fa-pause pauseIcn"></i>
+                <i class="fas fa-play playIcn" id="playIcn"></i>
+              </div>
+              <video width="375" height="600px" id="video1" loop>
+                <source src="./assects/uptownGirl.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
           <div class="swiper-slide">
-            <video width="375" height="600px" id="video2" loop>
-              <source src="./assects/leanWithMe.mp4" type="video/mp4" />
-            </video>
+            <div class="playPauseAndVideoContainer">
+              <div class="playPauseContainer paused playPause2">
+                <i class="fas fa-pause pauseIcn"></i>
+                <i class="fas fa-play playIcn"></i>
+              </div>
+              <video width="375" height="600px" id="video2" loop>
+                <source src="./assects/leanWithMe.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
           <!-- hard coded video tag end -->
         </div>
